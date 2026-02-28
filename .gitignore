@@ -1,0 +1,21 @@
+# Vivado generated/regenerable from tcl script
+vivado/*.cache/
+vivado/*.runs/
+vivado/*.hw/
+vivado/*.ip_user_files/
+vivado/*.gen/
+vivado/*.sim/
+vivado/*.xpr
+vivado/*.bit
+vivado/*.jou
+vivado/*.log
+vivado/*.xsa
+vivado/*.str
+vivado/.Xil/
+
+# All sources should live in src/, not vivado *.srcs/ folder
+vivado/*.srcs
+
+# Misc
+.vscode/
+.DS_Store
