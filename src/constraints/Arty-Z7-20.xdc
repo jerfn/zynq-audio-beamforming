@@ -5,13 +5,20 @@
 
 ## ----- USED PINS ----- ##
 
-set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33 } [get_ports { s_data_0_in  }]; #IO_L5P_T0_34            Sch=CK_IO0
-set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33 } [get_ports { LRCLK        }]; #IO_L2N_T0_34            Sch=CK_IO1
-set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { SCLK         }]; #IO_L3P_T0_DQS_PUDC_B_34 Sch=CK_IO2
+set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33 } [get_ports { s_data_0_in   }]; #IO_L5P_T0_34            Sch=CK_IO0
+set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33 } [get_ports { LRCLK_0       }]; #IO_L2N_T0_34            Sch=CK_IO1
+set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { SCLK_0        }]; #IO_L3P_T0_DQS_PUDC_B_34 Sch=CK_IO2
+
+set_property -dict { PACKAGE_PIN R17   IOSTANDARD LVCMOS33 } [get_ports { s_data_1_in   }]; #IO_L19N_T3_VREF_34      Sch=CK_IO11
+set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports { LRCLK_1       }]; #IO_L23N_T3_34           Sch=CK_IO12
+set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { SCLK_1        }]; #IO_L23P_T3_34           Sch=CK_IO13
 
 set_false_path -from    [get_ports s_data_0_in]
-set_false_path -to      [get_ports LRCLK]
-set_false_path -to      [get_ports SCLK]
+set_false_path -from    [get_ports s_data_1_in]
+set_false_path -to      [get_ports LRCLK_0]
+set_false_path -to      [get_ports LRCLK_1]
+set_false_path -to      [get_ports SCLK_0]
+set_false_path -to      [get_ports SCLK_1]
 
 ## --------------------- ##
 

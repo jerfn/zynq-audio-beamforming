@@ -12,6 +12,7 @@ vivado/*.log
 vivado/*.xsa
 vivado/*.str
 vivado/.Xil/
+vivado/*.zip
 
 # All sources should live in src/, not vivado *.srcs/ folder
 vivado/*.srcs

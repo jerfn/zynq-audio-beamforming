@@ -9,5 +9,10 @@ mkdir vivado && cd vivado
 vivado -mode batch -source ../recreate.tcl -tclargs --origin_dir ..
 ```
 
+recreate.tcl was generated with:
+```tcl
+write_project_tcl -force -paths_relative_to .. ../recreate.tcl
+```
+
 ## Notes
 - Vivado 2024.2
